@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/lagocontaminado.jpg')">
+
+<div data-role="page" id="principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+<h1>Contaminacion ambiental</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-list ui-group-theme-b">
+<li class="ui-first-child ui-las ">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Definicion</h2>
+<p>¿Que es la contaminacion?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de contaminacion</h2>
+<p>Se muestran los tipos de contaminacion que existen</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+<h2>Consecuencias</h2>
+<p>Demostracion de las consecuencias con enfoque al calentamiento global</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+<h2>Reciclaje</h2>
+<p>¿Que es y como se clasifica el reciclaje?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+<h2>Medidas para combatirla</h2>
+<p>¿Que podemos hacer para combatir este problema?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+<h2>Mi entorno</h2>
+<p>¿Que tan contaminado esta mi entorno?</p>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/mdpi.png" width="80" height="80">
+</div>
+<div>
+<h4>Aplicacion tres</h4>
+<h4>Angel Miranda Genis</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>¿Que es la contaminacion?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso.1 El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).</h2>
+
+<h2>Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.</h2>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/lagocontaminado.jpg',1)"><img src="imagenes/83253522.jpg" width="429" height="288" id="Image18"></a></p>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION DEL AIRE</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/images.jpg" width="480" height="290"></div>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/la-contaminacion-basura-planeta-600x338.jpg" width="41%" height="45%"></div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion tres, AJMG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TIPOS DE CONTAMINACION</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Contaminación del agua: La contaminación hídrica o contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación del agua</h1>
+<div>
+<img src="imagenes/contaminacion-del-agua-contaminació-del-oceano-con-petroleo-600x450.jpg" width="60%" height="65%"></div>
+</div>
+</div>
+<h2>Contaminación del suelo: La contaminación del suelo es una degradación de la calidad del suelo asociada a la presencia de sustancias químicas. 1 Se define como el aumento en la concentración de compuestos químicos, de origen antropogénico, que provoca cambios perjudiciales y reduce su empleo potencial, tanto por parte de la actividad humana, como por la naturaleza.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación del suelo</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/Causas-y-consecuencias-del-suelo-contaminado-4.jpg" width="61%" height="65%"></div>
+</div>
+</div>
+<h2>Contaminación del aire: Se entiende por contaminación atmosférica a la presencia en el aire de materias o formas de energía que implican riesgo, daño o molestia grave para las personas y bienes de cualquier naturaleza,1 así como que puedan atacar a distintos materiales, reducir la visibilidad o producir olores desagradables.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación del aire</h1>
+<div>
+<img src="imagenes/000_mvd6743441.jpg" width="60%" height="65%"></div>
+</div>
+</div>
+<h2>Contaminación sonora: Se llama contaminación acústica o contaminación sonora al exceso de sonido que altera las condiciones normales del ambiente en una determinada zona. Si bien el ruido no se acumula, traslada o mantiene en el tiempo como las otras contaminaciones, también puede causar grandes daños en la calidad de vida de las personas si no se controla bien o adecuadamente.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación sonora</h1>
+<div>
+<img src="imagenes/ruido-ntnva1.jpg" width="60%" height="65%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion tres, AJMG</h4>
+</div>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CONSECUENCIAS</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> Efectos de la contaminación en las plantas. Las plantas se han visto afectadas e incluso hay especies que han desaparecido por la polución, también la escasez de lluvias y la contaminación de agua, aire y suelo han tenido un papel muy importante.</h2>
+<h2>La contaminación es una realidad en nuestra vida y es que, por desgracia, cada vez oímos más voces sobre ella. Muchos son los países que están buscando una buena solución a este problema global, aunque parece que les cuesta mucho llegar a un acuerdo que satisfaga a todos los actores del escenarios. De mientras, las consecuencias se siguen viendo, empeoran y más se destruyen los hábitats naturales que un día hicieron de este planeta un planeta verde y azul de envidiar por muchos.</h2>
+<BR> 
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Falta de lluvia</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/La-contaminacion-ambiental-origina-la-erosion-de-la-tierra.jpg.jpg" width="57%" height="62%"></div>
+</div>
+</div>
+<BR> 
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Muerte de animales</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/pilas10.jpg" width="57%" height="62%"></div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion tes, AJMG</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TELEFONOS CELULARES DEL FUTURO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Crear conciencia ciudadana.
+No quemar ni talar plantas.
+Colocar la basura en los lugares apropiados.
+Regular el servicio de aseo urbano.
+Controlar el uso de fertilizantes y pesticidas.
+Crear vías de desagüe para las industrias que no lleguen a los mares o ríos utilizados para el servicio o consumo del ser humano o de los animales.
+Controlar los derrames accidentales de petróleo.
+Controlar los relaves mineros.
+Reciclar objetos (darles un nuevo uso).
+Tomar y generar conciencia de lo que está sucediendo.
+Realizar campañas de apoyo.
+Evitar el uso de aerosoles.
+Tener sentido de responsabilidad.</h2>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Limpieza del mundo</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/MUNDO_SUCIO.jpg" width="61%" height="65%"></div>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Usar mas la bicicleta</h1>
+<div>
+<img src="imagenes/help-prevent-air-800x800.jpg" width="60%" height="65%"></div>
+</div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion tres, AJMG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Compañías en mexico</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>El reciclaje consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta</h2>
+<h2> Si decea mas informacion, <a href="http://www.inforeciclaje.com/que-es-reciclaje.php" target="_self">Pulsar aqui.</a></h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Las tres R</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/images (1).jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Reciclaje</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/images (2).jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion tres, AJMG</h4>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Mi entorno</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>En mi entorno hay lugares los cuales estan bastante sucios, lugares descuidados. La mayoria de la gente que vivimos aqui no nos preocupamos por limpiar nuestra banqueta recliclar nuestra basura, en lo absoluto nos preocupamos por cuidar nuestro entorno de conivencia. </h2>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1101770x470.jpg" alt="1101-770x470" title="1101-770x470" id="wows1_0"/></li>
+		<li><img src="data1/images/406432.jpg" alt="406432" title="406432" id="wows1_1"/></li>
+		<li><img src="data1/images/casafea.jpg" alt="casafea" title="casafea" id="wows1_2"/></li>
+		<li><img src="data1/images/images.jpg" alt="images" title="images" id="wows1_3"/></li>
+		<li><img src="data1/images/img_0009.jpg" alt="IMG_0009" title="IMG_0009" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/incineracin.jpg" alt="responsive slider" title="incineración" id="wows1_5"/></a></li>
+		<li><img src="data1/images/viviendas4.jpg" alt="viviendas4" title="viviendas4" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="1101-770x470"><span><img src="data1/tooltips/1101770x470.jpg" alt="1101-770x470"/>1</span></a>
+		<a href="#" title="406432"><span><img src="data1/tooltips/406432.jpg" alt="406432"/>2</span></a>
+		<a href="#" title="casafea"><span><img src="data1/tooltips/casafea.jpg" alt="casafea"/>3</span></a>
+		<a href="#" title="images"><span><img src="data1/tooltips/images.jpg" alt="images"/>4</span></a>
+		<a href="#" title="IMG_0009"><span><img src="data1/tooltips/img_0009.jpg" alt="IMG_0009"/>5</span></a>
+		<a href="#" title="incineración"><span><img src="data1/tooltips/incineracin.jpg" alt="incineración"/>6</span></a>
+		<a href="#" title="viviendas4"><span><img src="data1/tooltips/viviendas4.jpg" alt="viviendas4"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion tres, AJMG</h4>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
