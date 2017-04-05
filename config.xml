@@ -5,10 +5,10 @@
  id="com.phonegap.example4"
  version="1.0.0">
  
- <name> app2 DATOS DE LA TELEFONIA CELULAR</name>
+ <name> app3 CONTAMINACION AMBIENTAL</name>
  
  <description>
- Aplicacion que muestra los DATOS sobre la telefonia crlular
+ Aplicacion que muestra datos acerca de la contaminacion
  </description>
  
  <author href="https://build.phonegap.com" email="genismirandaangel82@gmail.com">
